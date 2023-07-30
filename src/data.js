@@ -227,3 +227,24 @@ export const fishFoodList = [
     restaurant: "Punta Corcho",
   },
 ];
+
+export const sleepItems = [
+  {
+    id: 444,
+    icon: "fa-solid fa-umbrella-beach fa-fw",
+    title: "beachfront",
+    text: "Located across from the beach and two blocks from the town center, this one-bedroom one bath apartment is perfect for two guests.",
+  },
+  {
+    id: 445,
+    icon: "fa-solid fa-unlock fa-fw",
+    title: "self check-in",
+    text: "Secure lockbox with keys allows guests to check-in and out on their own. Combination and additional details will be provided upon booking.",
+  },
+  {
+    id: 446,
+    icon: "fa-solid fa-wifi fa-fw",
+    title: "dedicated workspace",
+    text: "Collapsible work desk with blazing fast fiber-optic wifi (up to 500Mbps) allows reliable internet access, streaming and video conferencing.",
+  },
+];
