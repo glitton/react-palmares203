@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import Services from "./components/Services";
+import About from "./components/About";
+import Sleep from "./components/Sleep";
 import Gallery from "./components/Gallery";
 import Activities from "./components/Activities";
 import Food from "./components/Food";
@@ -13,7 +14,8 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      <Services />
+      <About />
+      <Sleep />
       <Gallery />
       <Activities />
       <Food />

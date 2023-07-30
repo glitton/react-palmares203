@@ -56,6 +56,9 @@ Global Styles
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: var(--ff-primary);
   background: var(--clr-white);
@@ -382,16 +385,8 @@ Hero
 
 @media screen and (min-width: 768px) {
   .hero {
-    background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(0, 0, 0, 0.7)),
-      to(rgb(44, 174, 186, 0.3))
-    );
-    /* url("../images/main.jpeg") center/cover no-repeat;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgb(44, 174, 186, 0.3)),
-      url("../images/main.jpeg") center/cover no-repeat; */
+      url("./images/main.jpeg") center/cover no-repeat;
   }
   .hero-banner {
     padding: 0;
@@ -916,7 +911,12 @@ Footer
   margin-bottom: 1.5rem;
   flex-wrap: wrap;
 }
-
+.fa-airbnb {
+  font-size: 1.8rem;
+}
+.fa-airbnb:hover {
+  color: #ff5a5f;
+}
 .footer-link {
   color: var(--clr-white);
   text-transform: capitalize;
@@ -927,7 +927,7 @@ Footer
   transition: var(--transition);
 }
 .footer-link:hover {
-  color: --clr-p;
+  color: var(--clr-primary-1);
 }
 .copyright {
   text-transform: capitalize;

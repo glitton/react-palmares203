@@ -1,6 +1,6 @@
 import React from "react";
 
-const Services = () => {
+const Sleep = () => {
   return (
     <section className='section services' id='sleep'>
       <div className='section-title'>
@@ -69,4 +69,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Sleep;

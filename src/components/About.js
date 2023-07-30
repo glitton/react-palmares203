@@ -1,21 +1,15 @@
 import React from "react";
+import Title from "../components/Title";
+import aboutPM from "../images/about-pm.jpeg";
 
 const About = () => {
   return (
     <section className='section' id='about-pm'>
-      <div className='section-title'>
-        <h2>
-          about <span>Puerto Morelos</span>
-        </h2>
-      </div>
+      <Title title='about' secondTitle='puerto morelos' />
 
       <div className='section-center about-center'>
         <article className='about-img'>
-          <img
-            src='./images/about-pm.jpeg'
-            alt='puerto morelos'
-            className='about-photo'
-          />
+          <img src={aboutPM} alt='puerto morelos' className='about-photo' />
         </article>
 
         <article className='about-info'>
@@ -37,6 +31,7 @@ const About = () => {
             className='btn'
             href='https://en.wikipedia.org/wiki/Puerto_Morelos'
             target='_blank'
+            rel='noreferrer'
           >
             read more
           </a>

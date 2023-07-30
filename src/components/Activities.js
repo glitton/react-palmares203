@@ -1,13 +1,11 @@
 import React from "react";
+import Title from "../components/Title";
 
 const Activities = () => {
   return (
-    <section className='section' id='activities'>
-      <div className='section-title'>
-        <h2>
-          featured <span>activities</span>
-        </h2>
-      </div>
+    <section className='section' id='play'>
+      <Title title='featured' secondTitle='activities' />
+
       <div className='section-center featured-center'>
         <article className='activity-card'>
           <div className='activity-img-container'>

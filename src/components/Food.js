@@ -1,13 +1,10 @@
 import React from "react";
+import Title from "./Title";
 
 const Food = () => {
   return (
     <section className='section food' id='eat'>
-      <div className='section-title'>
-        <h2>
-          nearby <span>eats</span>
-        </h2>
-      </div>
+      <Title title='nearby' secondTitle='eats' />
 
       <div className='section-center food-center'>
         <article className='food'>
