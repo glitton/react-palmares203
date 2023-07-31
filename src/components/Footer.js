@@ -28,8 +28,8 @@ const Footer = () => {
         </li>
       </ul>
       <p className='copyright'>
-        copyright &copy; palmares 203 puerto morelos <span id='date'></span>.
-        all rights reserved
+        copyright &copy; palmares 203 puerto morelos{" "}
+        <span id='date'>{new Date().getFullYear()}</span>. all rights reserved
       </p>
     </footer>
   );

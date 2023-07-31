@@ -1,18 +1,22 @@
 import React from "react";
+import Title from "./Title";
+import { gallery } from "../imageData";
 
 const Gallery = () => {
   return (
     <section>
       <div className='section-title gallery-title'>
-        <h2>
-          the <span>apartment</span>
-        </h2>
+        <Title title='the' secondTitle='apartment' />
       </div>
 
       <div className='gallery-center'>
-        <article className='gallery-img-container'>
-          <img src='./images/pool.jpeg' alt='pool' className='gallery-img' />
-        </article>
+        {gallery.map((item) => {
+          return (
+            <article className='gallery-img-container' key={item.id}>
+              <img src={item.src} alt='pool' className='gallery-img' />
+            </article>
+          );
+        })}
 
         <article className='gallery-img-container'>
           <img

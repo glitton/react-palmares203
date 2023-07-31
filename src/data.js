@@ -1,3 +1,10 @@
+import img1 from "./images/diver-turtle.jpeg";
+import img2 from "./images/cenote-tour.jpeg";
+import img3 from "./images/koox-ich-cool.jpeg";
+import img4 from "./images/beach.jpeg";
+import img5 from "./images/los-colibres.jpeg";
+import img6 from "./images/live-music.jpg";
+
 export const pageLinks = [
   {
     id: 1,
@@ -23,6 +30,75 @@ export const pageLinks = [
     id: 5,
     href: "#book",
     text: "book",
+  },
+];
+
+export const activities = [
+  {
+    id: 6,
+    image: img1,
+    source: "omdelfin",
+    icon: "fa-solid fa-fish",
+    title: "scuba diving tours",
+    text: "Puerto Morelos is home to the best preserved section of the Mesoamerican Barrier Reef. This part of the second largest barrier reef in the world is also closer to land in Puerto Morelos than anywhere else in Mexico. You can't miss diving and snorkeling in Puerto Morelos! Courses, dive and snorkeling tour packages available at OmDelfin.",
+    href: "https://omdelfin.com/",
+    name: "Dive Shop OmDelfin",
+    price: "from $90",
+  },
+  {
+    id: 7,
+    image: img2,
+    source: "layla guesthouse",
+    icon: "fa-solid fa-binoculars",
+    title: "jungle and cenote tours",
+    text: "The explorer in you can't miss enyoying the various cenotes, which are fresh water sinkholes found in the middle of the jungle. Along the Ruta de los Cenotes you can find a variety of cenotes that are both completely open, semi-open or in a cavern. Join the Layla Guesthouse Mayan Experience Cenote tour for a once in a lifetime jungle and cenote experience.",
+    href: "https://laylaguesthouse.com/cenote-tour/",
+    name: "Layla Guesthouse",
+    price: "from $120",
+  },
+  {
+    id: 8,
+    image: img3,
+    source: "kookichcool",
+    icon: "fa-solid fa-utensils",
+    title: "organic mexican food",
+    text: "Koox Ich Kool is an organic experience along the Ruta de los Cenotes. Hosted by chef Karla Romo on her organic farm, she prepares a 6-course buffet meal using the finest local and organic ingredients along with a selection of mezcal and wine from Valle de Guadalupe. You'll also tour the orchard, the jungle and enjoy the water of the cenote pool.",
+    href: "https://www.facebook.com/kooxichkool",
+    name: "Koox Ich Kool",
+    price: "Contact for price",
+  },
+  {
+    id: 9,
+    image: img4,
+    source: "pexels",
+    icon: "fa-solid fa-umbrella-beach",
+    title: "Beach Clubs",
+    text: "Puerto Morelos has numerous beach clubs and the cost to rent a chair is very affordable. Although you can just bring your towel and lounge around for free, having a drink, food and a relaxing chair is worth it. Among our favorites include Hotel Ojo de Agua beach club, My Paradise, Don Ernesto's and the Diving Lodge.",
+    href: "https://www.google.com/",
+    name: "search google",
+    price: "from $10",
+  },
+  {
+    id: 10,
+    image: img5,
+    source: "Los Colibries",
+    icon: "fa-solid fa-spa",
+    title: "Mayan Jungle Spa",
+    text: "Los Colibries is a unique Mayan jungle spa along the Ruta de los Cenotes. The spa offers an exotic environment, surrounded by hundreds of trees, tropical plants, and birds. Their expert massage therapists provide traditional mayan massages, an outdoor bath all with natural oils. You'll have the most relaxing experience, guaranteed!",
+    href: "https://loscolibries.mx/",
+    name: "Los Colibres",
+    price: "from $50",
+  },
+  {
+    id: 11,
+    image: img6,
+    source: "Pexels",
+    icon: "fa-solid fa-guitar",
+    title: "live music",
+    text: "You'll find numerous street musicians and live bands performing in and out of the various restaurants along Puerto Morelos' beach side. From traditional mariachi to rock and roll and even karaoke, you'll surely find very entertaining music. Just do a Google search of live music in Puerto Morelos to get the latest information.",
+    href: "https://www.google.com/search?q=best+live+music+in+puerto+morelos&source=lmns&bih=969&biw=1920&hl=en&sa=X&ved=2ahUKEwiVyfbl__D9AhVeL94AHU9UDMoQ_AUoAHoECAEQAA",
+    name: "search google",
+    price: "inquire at venue",
   },
 ];
 

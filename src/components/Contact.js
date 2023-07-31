@@ -9,6 +9,7 @@ const Contact = () => {
         <a
           href='https://www.airbnb.com/rooms/589684916167853690?guests=1&adults=1&s=67&unique_share_id=169eed4a-7224-4ac5-a17c-a0170fe67904'
           target='_blank'
+          rel='noreferrer'
           className='booking-icon'
         >
           <i className='fab fa-airbnb'></i>
