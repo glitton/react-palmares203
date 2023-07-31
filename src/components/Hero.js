@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className='hero'>
+    <div className='hero' id='home'>
       <div className='hero-banner'>
         <h1>vacation in puerto morelos</h1>
         <p>

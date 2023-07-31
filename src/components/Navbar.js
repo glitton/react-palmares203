@@ -14,7 +14,6 @@ const Navbar = () => {
             <i className='fa-solid fa-bars'></i>
           </button>
         </div>
-
         <ul className='nav-links' id='nav-links'>
           {pageLinks.map((link) => {
             const { id, href, text } = link;
