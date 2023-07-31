@@ -1,6 +1,7 @@
 import React from "react";
 import Title from "./Title";
 import { gallery } from "../imageData";
+import Image from "./Image";
 
 const Gallery = () => {
   return (
@@ -10,11 +11,7 @@ const Gallery = () => {
       </div>
       <div className='gallery-center'>
         {gallery.map((item) => {
-          return (
-            <article className='gallery-img-container' key={item.id}>
-              <img src={item.src} alt={item.alt} className='gallery-img' />
-            </article>
-          );
+          return <Image key={item.id} {...item} />;
         })}
       </div>
     </section>
