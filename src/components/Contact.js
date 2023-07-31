@@ -40,12 +40,12 @@ const Contact = () => {
           </button>
         </form>
       </div>
-      <div className='form-submit'>
+      {/* <div className='form-submit'>
         <h3 className="'form-submit-thanks">
           Thank you for your message. We will respond to your inquiry within 24
           hours.
         </h3>
-      </div>
+      </div> */}
     </article>
   );
 };
