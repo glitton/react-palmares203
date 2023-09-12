@@ -223,7 +223,7 @@ Navbar
   align-items: center;
   padding: 1rem 2rem;
 }
-.nav-toggle {
+/* .nav-toggle {
   background: transparent;
   border: transparent;
   font-size: 1.5rem;
@@ -231,8 +231,8 @@ Navbar
   cursor: pointer;
   -webkit-transition: var(--transition);
   transition: var(--transition);
-}
-.nav-toggle:hover {
+} */
+/* .nav-toggle:hover {
   -webkit-transform: scale(1.4);
   transform: scale(1.4);
 }
@@ -263,7 +263,7 @@ Navbar
 }
 .show-links {
   height: 280px;
-}
+} */
 
 @media screen and (min-width: 992px) {
   .navbar {

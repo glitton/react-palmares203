@@ -1,8 +1,15 @@
-import React from "react";
+import { useState } from "react";
+import { FaBars } from "react-icons/fa";
 import { pageLinks } from "../data";
 import logo from "../images/palmares-203-resized.svg";
 
 const Navbar = () => {
+  const [showLinks, setShowLinks] = useState(false);
+
+  const toggleNavLinks = () => {
+    setShowLinks(!showLinks);
+  };
+
   return (
     <nav className='navbar'>
       <div className='nav-center'>
@@ -10,22 +17,26 @@ const Navbar = () => {
           <a href='#home'>
             <img src={logo} className='nav-logo' alt='palmares 203 logo' />
           </a>
-          <button type='button' className='nav-toggle' id='nav-toggle'>
-            <i className='fa-solid fa-bars'></i>
+          <button type='button' className='nav-toggle' onClick={toggleNavLinks}>
+            <FaBars />
           </button>
         </div>
-        <ul className='nav-links' id='nav-links'>
-          {pageLinks.map((link) => {
-            const { id, href, text } = link;
-            return (
-              <li key={id}>
-                <a href={href} className='nav-link scroll-link'>
-                  {text}
-                </a>
-              </li>
-            );
-          })}
-        </ul>
+        {showLinks && (
+          <div className='nav-links-container'>
+            <ul className='nav-links'>
+              {pageLinks.map((link) => {
+                const { id, href, text } = link;
+                return (
+                  <li key={id}>
+                    <a href={href} className='nav-link scroll-link'>
+                      {text}
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        )}
         <div className='nav-icons'>
           <a
             href='https://www.airbnb.com/rooms/589684916167853690?guests=1&adults=1&s=67&unique_share_id=169eed4a-7224-4ac5-a17c-a0170fe67904'
