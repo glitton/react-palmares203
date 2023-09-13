@@ -1,12 +1,15 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { FaBars } from "react-icons/fa";
 import { pageLinks } from "../data";
 import logo from "../images/palmares-203-resized.svg";
 
 const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false);
+  const navLinksContainerRef = useRef(null);
+  const navLinksRef = useRef(null);
 
   const toggleNavLinks = () => {
+    console.log(navLinksRef.current);
     setShowLinks(!showLinks);
   };
 
@@ -22,8 +25,8 @@ const Navbar = () => {
           </button>
         </div>
         {showLinks && (
-          <div className='nav-links-container'>
-            <ul className='nav-links'>
+          <div className='nav-links-container' ref={navLinksContainerRef}>
+            <ul className='nav-links' ref={navLinksRef}>
               {pageLinks.map((link) => {
                 const { id, href, text } = link;
                 return (
