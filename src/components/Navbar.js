@@ -9,8 +9,14 @@ const Navbar = () => {
   const navLinksRef = useRef(null);
 
   const toggleNavLinks = () => {
-    console.log(navLinksRef.current);
     setShowLinks(!showLinks);
+    console.log(navLinksRef.current);
+  };
+
+  const navLinkStyles = {
+    height: showLinks
+      ? `${navLinksRef.current.getBoundingClientRect().height}px`
+      : "0px",
   };
 
   return (
@@ -25,7 +31,11 @@ const Navbar = () => {
           </button>
         </div>
         {showLinks && (
-          <div className='nav-links-container' ref={navLinksContainerRef}>
+          <div
+            className='nav-links-container'
+            ref={navLinksContainerRef}
+            style={navLinkStyles}
+          >
             <ul className='nav-links' ref={navLinksRef}>
               {pageLinks.map((link) => {
                 const { id, href, text } = link;
