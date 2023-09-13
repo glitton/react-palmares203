@@ -261,7 +261,7 @@ Navbar
   transition: var(--transition);
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 800px) {
   .navbar {
     padding: 0.8rem 0;
   }
@@ -278,6 +278,10 @@ Navbar
     align-items: center;
     /* optional */
     flex-wrap: wrap;
+    /* border: 1px solid red; */
+  }
+  .nav-links-container {
+    height: auto !important;
   }
   .nav-links {
     height: auto;
